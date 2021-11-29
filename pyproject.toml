@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "nestedtext-py-test"
+version = "0.1.0"
+description = "Testing official nestextext python library."
+authors = ["Erik Westrup"]
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+nestedtext = "^3.0"
+
+[tool.poetry.dev-dependencies]
+autoflake = "^1.4"
+autoimport = "^0.7"
+black = "^21.10b0"
+flake8 = "^4.0"
+ipdb = "^0.13"
+isort = "^5.9"
+pudb = "^2021.2.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.isort]
+line_length = 160
+
+[tool.black]
+line_length = 160
