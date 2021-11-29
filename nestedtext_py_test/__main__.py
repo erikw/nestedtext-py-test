@@ -13,6 +13,7 @@ def test_from_file():
     except OSError as e:
         print(e, file=sys.stderr)
         sys.exit(1)
+    pprint(addressbook)
     pprint(addressbook["president"]["name"])
     pprint(type(addressbook["president"]["name"]))
 
